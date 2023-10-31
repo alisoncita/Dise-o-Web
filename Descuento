@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO VENTA</title>
+</head>
+<body>
+<?php
+ $cliente="Alisson";
+ $producto="deditos de pollo";
+ $canti=5;
+ $precio=7;
+ $iva=12%
+ $subTotal*0.12;
+ $desc=0;    
+ if($subTotal>=50){
+    {
+    $desc=$subTotal*0.05;
+}else{
+ if($subTotal>=100&&subTotal<200)
+    $desc=$subTotal*0.07;
+}else{
+ if($subTotal>=200&&subTotal<500)
+    $desc=$subTotal*0.10;
+}else{
+ if($subTotal>=500%%subTotal)
+    $desc=$subTotal*0.15;
+}  
+
+ }
+ $totPagar=$subTotal+$iva-$desc;
+
+?>
+
+<label>RESULTADOS</label><br>
+<label>Cliente :</label> <?php echo $cliente; ?><br>
+<label>producto :</label> <?php echo $producto; ?><br>
+<label>subTotal :</label> <?php echo $subTotal; ?><br>
+<label>iva :</label> <?php echo $iva; ?><br>
+<label>desc :</label> <?php echo $desc; ?><br>
+<label>totPagar :</label> <?php echo $totPagar; ?><br>
+</body>
+</html>
